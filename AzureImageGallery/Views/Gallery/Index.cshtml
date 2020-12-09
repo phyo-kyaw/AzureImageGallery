@@ -1,0 +1,43 @@
+﻿@model AzureImageGallery.Models.GalleryIndexModel
+
+
+<div class="container body-content">
+    <div class="row gallery-content">
+        @foreach (var image in Model.Images)
+        {
+            @* try using embed-responsive embed-responsive-16by9 in anchor tag *@
+            <div class="col-md-3 col-sm-12 col-12">
+                <div class="card mb-2">
+                    <a class="" asp-controller="Gallery" asp-action="Detail" asp-route-id="@image?.Id">
+                        <img src="@image.Url" alt="Azure Cloud Hosted Image" title="@image.Title" class="card-img-top img-fluid img-thumbnail" 
+                        style="width: 100%;height: 15rem;object-fit: cover;">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">@image.Title</h5>
+                        <p class="card-text">@image.Created</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@*@{
+    var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+}
+
+<a asp-action="Index"
+   asp-route-sortOrder="@ViewData["CurrentSort"]"
+   asp-route-page="@(Model.CurrentPage - 1)"
+   asp-route-currentFilter="@ViewData["CurrentFilter"]"
+   class="btn btn-default @prevDisabled">
+    Previous
+</a>
+<a asp-action="Index"
+   asp-route-sortOrder="@ViewData["CurrentSort"]"
+   asp-route-page="@(Model.CurrentPage + 1)"
+   asp-route-currentFilter="@ViewData["CurrentFilter"]"
+   class="btn btn-default @nextDisabled">
+    Next
+</a>*@

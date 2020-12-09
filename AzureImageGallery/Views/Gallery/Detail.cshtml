@@ -1,0 +1,36 @@
+﻿@model AzureImageGallery.Models.GalleryDetailModel
+
+@{
+    ViewData["Title"] = "Detail";
+}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 image-detail">
+            <img src="@Model.Url" alt="@Model.Title" />
+        </div>
+
+        <div class="col-12 image-detail-meta">
+            <p>Title: @Model.Title</p>
+            <p>Uploaded: @Model.Created</p>
+        </div>
+
+        <div class="col-3 col-sm-12 col-12 controls">
+            <span>
+                <a class="btn btn-primary mr-2 mt-2" asp-controller="Gallery" asp-action="Index">Back to Gallery</a>
+            </span>
+            <span>
+                <a class="btn btn-danger mr-2 mt-2" asp-controller="Gallery" asp-action="Delete" asp-route-id=@Model.Id>Delete Image</a>
+            </span>
+            <span>
+                <a class="btn btn-success mr-2 mt-2" asp-controller="Gallery" asp-action="Edit" asp-route-id=@Model.Id>Edit Image</a>
+            </span>
+        </div>
+    </div>
+</div>
+@*<h2>Detail</h2>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    <a asp-action="Index">Back to List</a>
+</div>*@
