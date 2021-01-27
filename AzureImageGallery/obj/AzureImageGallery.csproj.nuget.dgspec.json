@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\pk\\Courses\\MS\\Azure-image-gallery\\src\\AzureImageGallery\\AzureImageGallery.csproj": {}
+    "C:\\pk\\Courses\\Azure\\AzurePhoto-Gallery\\AzureImageGallery\\AzureImageGallery.csproj": {}
   },
   "projects": {
-    "C:\\pk\\Courses\\MS\\Azure-image-gallery\\src\\AzureImageGallery.Data\\AzureImageGallery.Data.csproj": {
+    "C:\\pk\\Courses\\Azure\\AzurePhoto-Gallery\\AzureImageGallery.Data\\AzureImageGallery.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\pk\\Courses\\MS\\Azure-image-gallery\\src\\AzureImageGallery.Data\\AzureImageGallery.Data.csproj",
+        "projectUniqueName": "C:\\pk\\Courses\\Azure\\AzurePhoto-Gallery\\AzureImageGallery.Data\\AzureImageGallery.Data.csproj",
         "projectName": "AzureImageGallery.Data",
-        "projectPath": "C:\\pk\\Courses\\MS\\Azure-image-gallery\\src\\AzureImageGallery.Data\\AzureImageGallery.Data.csproj",
+        "projectPath": "C:\\pk\\Courses\\Azure\\AzurePhoto-Gallery\\AzureImageGallery.Data\\AzureImageGallery.Data.csproj",
         "packagesPath": "C:\\Users\\phy0k\\.nuget\\packages\\",
-        "outputPath": "C:\\pk\\Courses\\MS\\Azure-image-gallery\\src\\AzureImageGallery.Data\\obj\\",
+        "outputPath": "C:\\pk\\Courses\\Azure\\AzurePhoto-Gallery\\AzureImageGallery.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\phy0k\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -96,14 +96,14 @@
         }
       }
     },
-    "C:\\pk\\Courses\\MS\\Azure-image-gallery\\src\\AzureImageGallery.Services\\AzureImageGallery.Services.csproj": {
+    "C:\\pk\\Courses\\Azure\\AzurePhoto-Gallery\\AzureImageGallery.Services\\AzureImageGallery.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\pk\\Courses\\MS\\Azure-image-gallery\\src\\AzureImageGallery.Services\\AzureImageGallery.Services.csproj",
+        "projectUniqueName": "C:\\pk\\Courses\\Azure\\AzurePhoto-Gallery\\AzureImageGallery.Services\\AzureImageGallery.Services.csproj",
         "projectName": "AzureImageGallery.Services",
-        "projectPath": "C:\\pk\\Courses\\MS\\Azure-image-gallery\\src\\AzureImageGallery.Services\\AzureImageGallery.Services.csproj",
+        "projectPath": "C:\\pk\\Courses\\Azure\\AzurePhoto-Gallery\\AzureImageGallery.Services\\AzureImageGallery.Services.csproj",
         "packagesPath": "C:\\Users\\phy0k\\.nuget\\packages\\",
-        "outputPath": "C:\\pk\\Courses\\MS\\Azure-image-gallery\\src\\AzureImageGallery.Services\\obj\\",
+        "outputPath": "C:\\pk\\Courses\\Azure\\AzurePhoto-Gallery\\AzureImageGallery.Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\phy0k\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -120,8 +120,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\pk\\Courses\\MS\\Azure-image-gallery\\src\\AzureImageGallery.Data\\AzureImageGallery.Data.csproj": {
-                "projectPath": "C:\\pk\\Courses\\MS\\Azure-image-gallery\\src\\AzureImageGallery.Data\\AzureImageGallery.Data.csproj"
+              "C:\\pk\\Courses\\Azure\\AzurePhoto-Gallery\\AzureImageGallery.Data\\AzureImageGallery.Data.csproj": {
+                "projectPath": "C:\\pk\\Courses\\Azure\\AzurePhoto-Gallery\\AzureImageGallery.Data\\AzureImageGallery.Data.csproj"
               }
             }
           }
@@ -168,14 +168,14 @@
         }
       }
     },
-    "C:\\pk\\Courses\\MS\\Azure-image-gallery\\src\\AzureImageGallery\\AzureImageGallery.csproj": {
+    "C:\\pk\\Courses\\Azure\\AzurePhoto-Gallery\\AzureImageGallery\\AzureImageGallery.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\pk\\Courses\\MS\\Azure-image-gallery\\src\\AzureImageGallery\\AzureImageGallery.csproj",
+        "projectUniqueName": "C:\\pk\\Courses\\Azure\\AzurePhoto-Gallery\\AzureImageGallery\\AzureImageGallery.csproj",
         "projectName": "AzureImageGallery",
-        "projectPath": "C:\\pk\\Courses\\MS\\Azure-image-gallery\\src\\AzureImageGallery\\AzureImageGallery.csproj",
+        "projectPath": "C:\\pk\\Courses\\Azure\\AzurePhoto-Gallery\\AzureImageGallery\\AzureImageGallery.csproj",
         "packagesPath": "C:\\Users\\phy0k\\.nuget\\packages\\",
-        "outputPath": "C:\\pk\\Courses\\MS\\Azure-image-gallery\\src\\AzureImageGallery\\obj\\",
+        "outputPath": "C:\\pk\\Courses\\Azure\\AzurePhoto-Gallery\\AzureImageGallery\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\phy0k\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -192,11 +192,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\pk\\Courses\\MS\\Azure-image-gallery\\src\\AzureImageGallery.Data\\AzureImageGallery.Data.csproj": {
-                "projectPath": "C:\\pk\\Courses\\MS\\Azure-image-gallery\\src\\AzureImageGallery.Data\\AzureImageGallery.Data.csproj"
+              "C:\\pk\\Courses\\Azure\\AzurePhoto-Gallery\\AzureImageGallery.Data\\AzureImageGallery.Data.csproj": {
+                "projectPath": "C:\\pk\\Courses\\Azure\\AzurePhoto-Gallery\\AzureImageGallery.Data\\AzureImageGallery.Data.csproj"
               },
-              "C:\\pk\\Courses\\MS\\Azure-image-gallery\\src\\AzureImageGallery.Services\\AzureImageGallery.Services.csproj": {
-                "projectPath": "C:\\pk\\Courses\\MS\\Azure-image-gallery\\src\\AzureImageGallery.Services\\AzureImageGallery.Services.csproj"
+              "C:\\pk\\Courses\\Azure\\AzurePhoto-Gallery\\AzureImageGallery.Services\\AzureImageGallery.Services.csproj": {
+                "projectPath": "C:\\pk\\Courses\\Azure\\AzurePhoto-Gallery\\AzureImageGallery.Services\\AzureImageGallery.Services.csproj"
               }
             }
           }

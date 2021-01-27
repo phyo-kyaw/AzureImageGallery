@@ -8977,11 +8977,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\pk\\Courses\\MS\\Azure-image-gallery\\src\\AzureImageGallery.Data\\AzureImageGallery.Data.csproj",
+      "projectUniqueName": "C:\\pk\\Courses\\Azure\\AzurePhoto-Gallery\\AzureImageGallery.Data\\AzureImageGallery.Data.csproj",
       "projectName": "AzureImageGallery.Data",
-      "projectPath": "C:\\pk\\Courses\\MS\\Azure-image-gallery\\src\\AzureImageGallery.Data\\AzureImageGallery.Data.csproj",
+      "projectPath": "C:\\pk\\Courses\\Azure\\AzurePhoto-Gallery\\AzureImageGallery.Data\\AzureImageGallery.Data.csproj",
       "packagesPath": "C:\\Users\\phy0k\\.nuget\\packages\\",
-      "outputPath": "C:\\pk\\Courses\\MS\\Azure-image-gallery\\src\\AzureImageGallery.Data\\obj\\",
+      "outputPath": "C:\\pk\\Courses\\Azure\\AzurePhoto-Gallery\\AzureImageGallery.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\phy0k\\AppData\\Roaming\\NuGet\\NuGet.Config",

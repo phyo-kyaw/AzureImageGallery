@@ -19,7 +19,13 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: '3.1.102'
-
+    
+    - name: Restore Data packages
+      run: dotnet restore AzureImageGallery.Data/AzureImageGallery.Data.csproj
+      
+    - name: Restore Service packages
+      run: dotnet restore AzureImageGallery.Services/AzureImageGallery.Services.csproj
+ 
     - name: Restore packages
       run: dotnet restore AzureImageGallery/AzureImageGallery.csproj
       
