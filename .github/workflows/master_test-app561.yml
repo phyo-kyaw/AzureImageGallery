@@ -20,6 +20,9 @@ jobs:
       with:
         dotnet-version: '3.1.102'
 
+    - name: Restore packages
+      run: dotnet restore AzureImageGallery/AzureImageGallery.csproj
+      
     - name: Build with dotnet
       run: dotnet build --configuration Release
 
