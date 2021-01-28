@@ -19,16 +19,7 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: '3.1.102'
-    
-    - name: Restore Data packages
-      run: dotnet restore AzureImageGallery.Data/AzureImageGallery.Data.csproj
-      
-    - name: Restore Service packages
-      run: dotnet restore AzureImageGallery.Services/AzureImageGallery.Services.csproj
- 
-    - name: Restore packages
-      run: dotnet restore AzureImageGallery/AzureImageGallery.csproj
-      
+
     - name: Build with dotnet
       run: dotnet build --configuration Release
 
@@ -40,5 +31,5 @@ jobs:
       with:
         app-name: 'testing54321'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_e7045cb7922047a5a633585bd30e7c5a }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_ee954eceb686485ea4022522af59b9f2 }}
         package: ${{env.DOTNET_ROOT}}/myapp 
