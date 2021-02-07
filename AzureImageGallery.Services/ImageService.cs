@@ -72,6 +72,23 @@ namespace AzureImageGallery.Services
             return blobClient.GetContainerReference(containerName); //get valid storage container
         }
 
+        public async Task<CloudBlobContainer> GetBlobContainerAsync(string azureConnectionString, string containerName)
+        {
+            //var storageAccount = CloudStorageAccount.Parse(azureConnectionString); //check to get storage file
+            //var blobClient = storageAccount.CreateCloudBlobClient(); //get direct reference
+            //return blobClient.GetContainerReference(containerName); //get valid storage container
+
+            var storageAccount = CloudStorageAccount.Parse(azureConnectionString); //check to get storage file
+            var blobClient = storageAccount.CreateCloudBlobClient(); //get direct reference
+                                                                     //return blobClient.GetContainerReference(containerName); //get valid storage container
+            CloudBlobContainer container = blobClient.GetContainerReference(containerName);
+            await container.CreateIfNotExistsAsync();  //.CreateIfNotExists(); // remove the if condition
+            BlobContainerPermissions permissions = await container.GetPermissionsAsync();   //.GetPermissions();
+            permissions.PublicAccess = BlobContainerPublicAccessType.Container;
+            await container.SetPermissionsAsync(permissions);   //SetPermissions(permissions);
+            return container;
+        }
+
         public async Task SetImage(string title, string tags, Uri uri)
         {
             // create reference to SQL database

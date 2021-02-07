@@ -31,17 +31,19 @@ namespace SimpleImageGallery
                 })
             .ConfigureAppConfiguration(( context, config) =>
             {
-                var builtConfig = config.Build();
-                var vaultName = builtConfig["ConnectionStrings:VaultName"];
-                if( !string.IsNullOrEmpty(vaultName))
-                {
-                    var azureServiceTokenProvider = new AzureServiceTokenProvider();
-                    var keyVaultClient = new KeyVaultClient(
-                        new KeyVaultClient.AuthenticationCallback(
-                            azureServiceTokenProvider.KeyVaultTokenCallback));
-                    config.AddAzureKeyVault(vaultName, keyVaultClient, new DefaultKeyVaultSecretManager());
+                if(!context.HostingEnvironment.IsDevelopment())
+                { 
+                    var builtConfig = config.Build();
+                    var vaultName = builtConfig["ConnectionStrings:VaultName"];
+                    if( !string.IsNullOrEmpty(vaultName))
+                    {
+                        var azureServiceTokenProvider = new AzureServiceTokenProvider();
+                        var keyVaultClient = new KeyVaultClient(
+                            new KeyVaultClient.AuthenticationCallback(
+                                azureServiceTokenProvider.KeyVaultTokenCallback));
+                        config.AddAzureKeyVault(vaultName, keyVaultClient, new DefaultKeyVaultSecretManager());
+                    }
                 }
-
                 //var keyVaultClient = new KeyVaultClient(async (authority, resource, scope) =>
                 //{
                 //    var credential = new DefaultAzureCredential(true);

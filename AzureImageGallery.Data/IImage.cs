@@ -17,6 +17,8 @@ namespace AzureImageGallery.Data
 
         CloudBlobContainer GetBlobContainer(string connection, string containerName);
 
+        Task<CloudBlobContainer> GetBlobContainerAsync(string connection, string containerName);
+
         Task SetImage(string title, string tags, Uri uri);
 
         List<ImageTag> ParseTags(string tags);

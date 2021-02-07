@@ -36,8 +36,10 @@ namespace AzureImageGallery.Controllers
         [HttpPost]
         public async Task<IActionResult> UploadNewImage(IFormFile file, string title, string tags)
         {
-            var container = _imageService.GetBlobContainer(AzureConnectionString, "images");
-            
+            //var container = _imageService.GetBlobContainer(AzureConnectionString, "images");
+            var container = await _imageService.GetBlobContainerAsync(AzureConnectionString, "images");
+            //container.CreateIfNotExists();
+
             // In order to upload an image, parse the Content Disposition Response Header (CDRH) as a file that uses IFormFile from the systems AspNetCore.Http
             // store the CDRH in a variable and use the systems Http Headers
             var content = ContentDispositionHeaderValue.Parse(file.ContentDisposition);
